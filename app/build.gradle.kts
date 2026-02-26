@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.myapp"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.myapp"
@@ -32,8 +32,9 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.room:room-runtime:2.8.4")
     implementation(libs.appcompat)
+    annotationProcessor("androidx.room:room-compiler:2.8.4")
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
